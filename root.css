@@ -1,5 +1,3 @@
-@import url();
-
 @font-face {
     font-family: "Varela Round";
     font-style: normal;
@@ -846,7 +844,7 @@ body {
 }
 
 /* BTN  ---------------- 11 */
-.btn-11{
+.btn-11 {
     position: relative;
     padding: 20px 50px;
     display: block;
@@ -857,7 +855,7 @@ body {
     border-radius: 40px;
 }
 
-.btn-11 span{
+.btn-11 span {
     position: relative;
     color: #fff;
     font-family: Arial;
@@ -909,26 +907,24 @@ body {
         transform: translate(-50%, -75%) rotate(360deg);
     }
 }
-.btn-11-danger .liquid{
+.btn-11-danger .liquid {
     background: var(--danger);
 }
-.btn-11-info .liquid{
+.btn-11-info .liquid {
     background: var(--info);
 }
-.btn-11-success .liquid{
+.btn-11-success .liquid {
     background: var(--success);
 }
-.btn-11-war .liquid{
+.btn-11-war .liquid {
     background: var(--war);
 }
-.btn-11-magic .liquid{
+.btn-11-magic .liquid {
     background: var(--magic);
 }
-.btn-11-magic span{
+.btn-11-magic span {
     color: var(--purple) !important;
 }
-
-
 
 /* Box  ---------------- 1 */
 .box-1 {
@@ -1323,51 +1319,57 @@ body {
     color: white;
 }
 
-
-
-
-
-
-
-
 /* Navbar  ---------------- 1 */
-:root{
+:root {
     --neon-green: #51d5c2;
 }
 .nav-1{
-    padding: 20px 50px;
+    font-family: "Nunito";
+    display: flex;
+    transition: all .51s;
+    justify-content: center;
+}
+.nav-1 .nav-items{
+    padding: 30px 50px;
     background-color: #f0f3f7;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    font-family: 'Nunito';
+    font-family: "Nunito";
     display: flex;
     justify-content: space-around;
+    transition: all .51s;
+    column-gap: 40px;
 }
-.nav-1 .nav-item{
+.nav-1 .nav-item {
     position: relative;
     display: flex;
     justify-content: space-between;
     column-gap: 10px;
     padding: 0 20px;
+    transition: all .51s;
     cursor: pointer;
 }
-.nav-1 .nav-item p{
+.nav-1 .nav-item p {
     z-index: 11;
     font-size: 20px;
+    user-select: none;
 }
-.nav-1 .nav-item i{
+.nav-1 .nav-item i {
     z-index: 11;
     font-size: 30px;
+    user-select: none;
 }
-.nav-1 .nav-item.activ i{
+.nav-1 .nav-item.activ i {
+    transition: all .51s;
     color: var(--neon-green);
 }
-.nav-1 .nav-item.activ p{
+.nav-1 .nav-item.activ p {
+    transition: all .51s;
     color: var(--neon-green);
 }
-.nav-1 .nav-item.activ::before{
+.nav-1 .nav-item.activ::before {
     content: "";
     position: absolute;
     width: 120%;
@@ -1376,4 +1378,5 @@ body {
     left: -10%;
     background-color: #d7e8ff;
     border-radius: 10px;
+    transition: all .51s;
 }
