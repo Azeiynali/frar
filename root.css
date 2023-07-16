@@ -1,0 +1,1379 @@
+@import url();
+
+@font-face {
+    font-family: "Varela Round";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfp8uP.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+button {
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+small {
+    display: inline-block;
+}
+body {
+    font-family: "Nunito";
+}
+:root {
+    --danger: #e2462b;
+    --dark-danger: #be2b11;
+    --war: #ffbb3d;
+    --dark-war: #f3a006;
+    --success: #00be29;
+    --dark-success: #00851d;
+    --info: #6868ff;
+    --dark-info: #0000ff;
+    --magic: radial-gradient(18% 28% at 24% 50%, #cefaffff 7%, #073aff00 100%),
+        radial-gradient(18% 28% at 18% 71%, #ffffff59 6%, #073aff00 100%),
+        radial-gradient(70% 53% at 36% 76%, #73f2ffff 0, #073aff00 100%),
+        radial-gradient(42% 53% at 15% 94%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(42% 53% at 34% 72%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(18% 28% at 35% 87%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(31% 43% at 7% 98%, #ffffffff 24%, #073aff00 100%),
+        radial-gradient(21% 37% at 72% 23%, #d3ff6d9c 24%, #073aff00 100%),
+        radial-gradient(35% 56% at 91% 74%, #8a4ffff5 9%, #073aff00 100%),
+        radial-gradient(74% 86% at 67% 38%, #6dffaef5 24%, #073aff00 100%),
+        linear-gradient(125deg, #4eb5ffff 1%, #4c00fcff 100%);
+    --purple: #8d46ff;
+
+    /* GRs */
+    --GR1: radial-gradient(18% 28% at 24% 50%, #cefaffff 7%, #073aff00 100%),
+        radial-gradient(18% 28% at 18% 71%, #ffffff59 6%, #073aff00 100%),
+        radial-gradient(70% 53% at 36% 76%, #73f2ffff 0, #073aff00 100%),
+        radial-gradient(42% 53% at 15% 94%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(42% 53% at 34% 72%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(18% 28% at 35% 87%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(31% 43% at 7% 98%, #ffffffff 24%, #073aff00 100%),
+        radial-gradient(21% 37% at 72% 23%, #d3ff6d9c 24%, #073aff00 100%),
+        radial-gradient(35% 56% at 91% 74%, #8a4ffff5 9%, #073aff00 100%),
+        radial-gradient(74% 86% at 67% 38%, #6dffaef5 24%, #073aff00 100%),
+        linear-gradient(125deg, #4eb5ffff 1%, #4c00fcff 100%);
+
+    /* Pallets */
+}
+
+/* BTN  ---------------- 1 */
+.btn-1 {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-1-danger {
+    background-color: var(--danger);
+    color: white;
+}
+.btn-1-danger:active {
+    background-color: var(--dark-danger);
+}
+.btn-1-out-danger {
+    border: 3px solid var(--danger);
+    color: rgb(0, 0, 0);
+}
+.btn-1-out-danger:active {
+    border: 4px solid var(--danger);
+}
+
+.btn-1-light {
+    background-color: #ffffff;
+    color: rgb(54, 54, 54);
+}
+.btn-1-light:active {
+    background-color: #e4e4e4;
+}
+.btn-1-out-light {
+    border: 3px solid #ffffff;
+    color: white;
+}
+.btn-1-out-light:active {
+    border: 4px solid #ffffff;
+}
+
+.btn-1-dark {
+    background-color: #292929;
+    color: white;
+}
+.btn-1-dark:active {
+    background-color: #000000;
+}
+.btn-1-out-dark {
+    border: 3px solid #000000;
+    color: black;
+}
+.btn-1-out-dark:active {
+    border: 4px solid #000000;
+}
+
+.btn-1-war {
+    background-color: var(--war);
+    color: white;
+}
+.btn-1-war:active {
+    background-color: var(--dark-war);
+}
+.btn-1-out-war {
+    border: 3px solid var(--war);
+    color: #ffbb3d;
+}
+.btn-1-out-war:active {
+    border: 4px solid var(--war);
+}
+
+.btn-1-success {
+    background-color: var(--success);
+    color: white;
+}
+.btn-1-success:active {
+    background-color: var(--dark-success);
+}
+.btn-1-out-success {
+    border: 3px solid var(--success);
+    color: #4bcc00;
+}
+.btn-1-out-success:active {
+    border: 4px solid var(--success);
+}
+
+.btn-1-info {
+    background-color: var(--info);
+    color: white;
+}
+.btn-1-info:active {
+    background-color: var(--dark-info);
+}
+
+.btn-1-out-info {
+    border: 3px solid var(--info);
+    color: var(--info);
+}
+.btn-1-out-info:active {
+    border: 4px solid var(--info);
+}
+
+.btn-1-magic {
+    position: relative;
+    color: #8d46ff;
+    background: radial-gradient(
+            18% 28% at 24% 50%,
+            #cefaffff 7%,
+            #073aff00 100%
+        ),
+        radial-gradient(18% 28% at 18% 71%, #ffffff59 6%, #073aff00 100%),
+        radial-gradient(70% 53% at 36% 76%, #73f2ffff 0, #073aff00 100%),
+        radial-gradient(42% 53% at 15% 94%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(42% 53% at 34% 72%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(18% 28% at 35% 87%, #ffffffff 7%, #073aff00 100%),
+        radial-gradient(31% 43% at 7% 98%, #ffffffff 24%, #073aff00 100%),
+        radial-gradient(21% 37% at 72% 23%, #d3ff6d9c 24%, #073aff00 100%),
+        radial-gradient(35% 56% at 91% 74%, #8a4ffff5 9%, #073aff00 100%),
+        radial-gradient(74% 86% at 67% 38%, #6dffaef5 24%, #073aff00 100%),
+        linear-gradient(125deg, #4eb5ffff 1%, #4c00fcff 100%);
+}
+
+/* BTN  ---------------- 2 */
+.btn-2 {
+    padding: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+    border-radius: 510px;
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transition: all 0.5s;
+}
+.btn-2::after {
+    content: "";
+    border-radius: 100px;
+    transition: all 1s ease-in-out;
+    z-index: -10;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 12%;
+    left: 10px;
+}
+.btn-2-danger {
+    border: 2px solid var(--danger);
+}
+.btn-2-danger::after {
+    background-color: var(--danger);
+}
+.btn-2-danger:hover::after {
+    width: 90%;
+}
+.btn-2-danger:hover {
+    color: white;
+}
+.btn-2-dark {
+    border: 2px solid #000000;
+}
+.btn-2-dark::after {
+    background-color: #111111;
+}
+.btn-2-dark:hover::after {
+    width: 90%;
+}
+.btn-2-dark:hover {
+    color: white;
+}
+.btn-2-light {
+    color: white;
+    border: 2px solid #ffffff;
+}
+.btn-2-light::after {
+    background-color: #ffffff;
+}
+.btn-2-light:hover::after {
+    width: 90%;
+}
+.btn-2-light:hover {
+    color: rgb(0, 0, 0);
+}
+.btn-2-success {
+    color: #000000;
+    border: 2px solid var(--success);
+}
+.btn-2-success::after {
+    background-color: var(--success);
+}
+.btn-2-success:hover::after {
+    width: 90%;
+}
+.btn-2-success:hover {
+    color: wheat;
+}
+.btn-2-war {
+    color: #000000;
+    border: 2px solid var(--war);
+}
+.btn-2-war::after {
+    background-color: var(--war);
+}
+.btn-2-war:hover::after {
+    width: 90%;
+}
+
+.btn-2-info {
+    color: #000000;
+    border: 2px solid var(--info);
+}
+.btn-2-info::after {
+    background-color: var(--info);
+}
+.btn-2-info:hover::after {
+    width: 90%;
+    color: #ffffff;
+}
+.btn-2-info:hover {
+    color: white;
+}
+
+.btn-2-magic {
+    color: var(--purple);
+    border: 2px solid var(--info);
+}
+.btn-2-magic::after {
+    background: var(--magic);
+}
+.btn-2-magic:hover::after {
+    width: 90%;
+}
+
+/* BTN  ---------------- 3 */
+.btn-3 {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+.btn-3:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+.btn-3-danger {
+    background-color: var(--danger);
+    color: white;
+    border: 2px solid var(--dark-danger);
+    box-shadow: 0 2px 0 var(--dark-danger);
+}
+.btn-3-success {
+    background-color: var(--success);
+    color: white;
+    border: 2px solid var(--dark-success);
+    box-shadow: 0 2px 0 var(--dark-success);
+}
+.btn-3-war {
+    background-color: var(--war);
+    color: white;
+    border: 2px solid var(--dark-war);
+    box-shadow: 0 2px 0 var(--dark-war);
+}
+.btn-3-dark {
+    background-color: #505050;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 0 2px 0 black;
+}
+.btn-3-light {
+    background-color: #ffffff;
+    color: rgb(24, 24, 24);
+    border: 2px solid #d3d3d3;
+    box-shadow: 0 2px 0 #d3d3d3;
+}
+.btn-3-info {
+    background-color: var(--info);
+    color: white;
+    border: 2px solid var(--dark-info);
+    box-shadow: 0 2px 0 var(--dark-info);
+}
+.btn-3-magic {
+    background: var(--magic);
+    color: var(--purple);
+    border: 2px solid var(--dark-info);
+    box-shadow: 0 2px 0 var(--dark-info);
+}
+
+/* BTN  ---------------- 4 */
+.btn-4 {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+.btn-4 p {
+    text-align: center;
+    margin-left: 10px;
+    position: relative;
+    z-index: 10000;
+}
+.btn-4 i {
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    font-size: 1.4rem;
+    z-index: 1000;
+}
+.btn-4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    border-radius: 10px;
+    width: 40px;
+    left: 0;
+    transition: all 0.5s ease-out;
+}
+.btn-4:hover::after {
+    width: 100%;
+}
+
+.btn-4-success {
+    background-color: var(--success);
+    color: white;
+}
+.btn-4-success::after {
+    background-color: #004211;
+}
+
+.btn-4-info {
+    background-color: var(--info);
+    color: white;
+}
+.btn-4-info::after {
+    background-color: #003b88;
+}
+
+.btn-4-dark {
+    background-color: #696969;
+    color: white;
+}
+.btn-4-dark::after {
+    background-color: black;
+}
+
+.btn-4-war {
+    background-color: var(--war);
+    color: white;
+}
+.btn-4-war::after {
+    background-color: #bb8900;
+}
+
+.btn-4-light {
+    background-color: white;
+    color: black;
+}
+.btn-4-light::after {
+    background-color: #bbbbbb;
+}
+
+.btn-4-danger {
+    background-color: var(--danger);
+    color: white;
+}
+.btn-4-danger::after {
+    background-color: var(--dark-danger);
+}
+
+.btn-4-magic {
+    background: var(--magic);
+    color: var(--purple);
+}
+.btn-4-magic::after {
+    background: var(--dark-info);
+}
+.btn-4-magic i {
+    color: white;
+}
+.btn-4-magic:hover {
+    color: white;
+}
+
+/* BTN  ---------------- 5 */
+.btn-5 {
+    padding: 6px;
+    padding-left: 65px;
+    padding-right: 36px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transform-origin: 0 0;
+    transform: scale(0.6);
+}
+.btn-5 i {
+    position: absolute;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    top: 20%;
+}
+.btn-5 p {
+    left: 0px;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    top: 10%;
+}
+.btn-5::after {
+    content: "";
+    height: 100%;
+    width: 70px;
+    z-index: -10000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn-5::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: -100;
+    top: 22%;
+    left: 63px;
+    transform: rotateZ(45deg);
+}
+
+.btn-5-danger {
+    border: 3px solid red;
+}
+.btn-5-danger::after {
+    background-color: red;
+}
+
+.btn-5-success {
+    border: 3px solid var(--success);
+}
+.btn-5-success::after {
+    background-color: var(--success);
+}
+
+.btn-5-info {
+    border: 3px solid var(--info);
+}
+.btn-5-info::after {
+    background-color: var(--info);
+}
+
+.btn-5-dark {
+    border: 3px solid black;
+}
+.btn-5-dark::after {
+    background-color: black;
+}
+
+.btn-5-magic {
+    border: 3px solid var(--dark-info);
+}
+.btn-5-magic::after {
+    background: var(--magic);
+}
+
+/* BTN  ---------------- 5 */
+.btn-6 {
+    padding: 6px;
+    padding-left: 35px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+.btn-6 p {
+    text-align: center;
+    margin-left: 10px;
+    position: relative;
+    z-index: 10000;
+}
+.btn-6 i {
+    position: absolute;
+    left: 13px;
+    top: 8px;
+    z-index: 1000;
+}
+.btn-6::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 40px;
+    left: 0;
+    transition: all 0.5s ease-out;
+}
+
+.btn-6-success {
+    background-color: var(--success);
+    color: white;
+}
+.btn-6-success::after {
+    background-color: #004211;
+}
+
+.btn-6-info {
+    background-color: var(--info);
+    color: white;
+}
+.btn-6-info::after {
+    background-color: #003b88;
+}
+
+.btn-6-dark {
+    background-color: #696969;
+    color: white;
+}
+.btn-6-dark::after {
+    background-color: black;
+}
+
+.btn-6-war {
+    background-color: var(--war);
+    color: white;
+}
+.btn-6-war::after {
+    background-color: #bb8900;
+}
+
+.btn-6-light {
+    background-color: white;
+    color: black;
+}
+.btn-6-light::after {
+    background-color: #bbbbbb;
+}
+
+.btn-6-danger {
+    background-color: var(--danger);
+    color: white;
+}
+.btn-6-danger::after {
+    background-color: var(--dark-danger);
+}
+
+.btn-6-magic {
+    background: var(--magic);
+    color: white;
+}
+.btn-6-magic::after {
+    background-color: var(--dark-info);
+}
+
+/* BTN  ---------------- 7 */
+:root {
+    --light-danger: #ff5555;
+    --light-info: #5dc6f0;
+    --light-success: #69f05d;
+    --light-war: #eef05d;
+}
+.btn-7 {
+    padding: 6px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 100px;
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 7px #ffffff7a inset;
+    color: white;
+}
+.btn-7:active {
+    box-shadow: 5px 5px 7px #0000002a inset;
+}
+.btn-7-danger {
+    background-color: var(--light-danger);
+}
+.btn-7-info {
+    background-color: var(--light-info);
+}
+.btn-7-success {
+    background-color: var(--light-success);
+}
+.btn-7-dark {
+    background-color: #292929;
+}
+.btn-7-war {
+    background-color: var(--light-war);
+    color: #1b1b1b;
+}
+.btn-7-magic {
+    background: var(--magic);
+    color: var(--purple);
+}
+
+/* BTN  ---------------- 8 */
+:root {
+    --on-8: -4px -3px 6px #ffffff17, 4px 5px 8px #1d1d1d8a;
+    --off-8: -5px -5px 8px #c28be21f inset, 5px 5px 8px #1b20279a inset;
+}
+
+.btn-8 {
+    padding: 6px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 100px;
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--on-8);
+    color: white;
+}
+.btn-8:active {
+    box-shadow: var(--off-8);
+}
+.btn-8-danger {
+    background-color: var(--dark-danger);
+}
+.btn-8-info {
+    background-color: var(--dark-info);
+}
+.btn-8-success {
+    background-color: var(--dark-success);
+}
+.btn-8-dark {
+    background-color: #303030;
+}
+.btn-8-light {
+    background-color: #d1d1d1;
+    color: black;
+}
+.btn-8-magic {
+    background: var(--magic);
+    color: var(--info);
+}
+
+/* BTN  ---------------- 9 */
+.btn-9 {
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.btn-9::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: all 0.5s;
+    border-radius: 100px;
+}
+.btn-9:hover::after {
+    width: 100%;
+}
+.btn-9-danger::after {
+    background-color: var(--danger);
+}
+.btn-9-info::after {
+    background-color: var(--info);
+}
+.btn-9-success::after {
+    background-color: var(--success);
+}
+.btn-9-dark::after {
+    background-color: black;
+}
+.btn-9-light::after {
+    background-color: white;
+}
+.btn-9-magic::after {
+    background: var(--magic);
+}
+
+/* BTN  ---------------- 9 */
+.btn-10 {
+    text-align: center;
+    font-family: "Varela Round";
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+    font-size: 4.5rem;
+    color: white;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    transition: all 1s;
+}
+.btn-10 p {
+    transition: all 1s;
+    top: 34px;
+    left: 10px;
+    position: absolute;
+    font-size: 1.5rem;
+    transform: scale(0);
+    transition: all 1s;
+}
+.btn-10 i {
+    transition: all 1s;
+    margin-top: 14px;
+}
+.btn-10:hover p {
+    transform: scale(1);
+}
+.btn-10:hover i {
+    transform: scale(0);
+}
+.btn-10-danger {
+    background-color: var(--danger);
+}
+.btn-10-info {
+    background-color: var(--info);
+}
+.btn-10-success {
+    background-color: var(--success);
+}
+.btn-10-war {
+    background-color: var(--war);
+}
+.btn-10-dark {
+    background-color: black;
+}
+.btn-10-light {
+    background-color: white;
+    color: black;
+}
+.btn-10-magic {
+    background: var(--magic);
+    color: var(--info);
+}
+
+/* BTN  ---------------- 11 */
+.btn-11{
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.btn-11 span{
+    position: relative;
+    color: #fff;
+    font-family: Arial;
+    letter-spacing: 8px;
+    z-index: 1;
+}
+
+.btn-11 .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.btn-11 .liquid::after,
+.btn-11 .liquid::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.btn-11 .liquid::before {
+    border-radius: 45%;
+    background: rgb(255, 255, 255);
+    animation: animate 5s linear infinite;
+}
+
+.btn-11 .liquid::after {
+    border-radius: 40%;
+    background: rgba(255, 255, 255, 0.5);
+    animation: animate 10s linear infinite;
+}
+
+.btn-11:hover .liquid {
+    top: -120px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+.btn-11-danger .liquid{
+    background: var(--danger);
+}
+.btn-11-info .liquid{
+    background: var(--info);
+}
+.btn-11-success .liquid{
+    background: var(--success);
+}
+.btn-11-war .liquid{
+    background: var(--war);
+}
+.btn-11-magic .liquid{
+    background: var(--magic);
+}
+.btn-11-magic span{
+    color: var(--purple) !important;
+}
+
+
+
+/* Box  ---------------- 1 */
+.box-1 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.box-1:hover img {
+    transform: scale(1.1);
+}
+.box-1 img {
+    width: 300px;
+    transition: all 1s;
+}
+.box-1 .Title {
+    font-size: 2rem;
+    margin-left: 7px;
+}
+.box-1 .writer {
+    float: right;
+    margin-right: 13px;
+}
+.box-1 .status {
+    color: var(--info);
+    margin-left: 10px;
+}
+.box-1 .line {
+    border: 1px solid #d8d8d8;
+    margin-bottom: 10px;
+}
+.box-1 .Time {
+    margin-left: 10px;
+    display: inline-block;
+}
+.box-1 .sale {
+    float: right;
+    margin-right: 10px;
+}
+
+/* Box  ---------------- 2 */
+.box-2 {
+    background-color: rgb(255, 255, 255);
+    width: 615px;
+    height: 200px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 20px rgba(1, 1, 1, 0.2);
+    cursor: pointer;
+    position: relative;
+}
+.box-2:hover {
+    transform: translateY(-10px);
+}
+.box-2 .prof {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: url("https://cdn-icons-png.flaticon.com/512/3135/3135715.png");
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.box-2 .Username {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 80px;
+    bottom: 20px;
+    letter-spacing: 2px;
+    color: #686868;
+}
+.box-2 .like i {
+    color: rgb(138, 138, 138);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 20px;
+    transition: all 0.3s;
+    bottom: 20px;
+}
+.box-2 .like:hover i {
+    transform: scale(0.9);
+}
+.box-2 .bookmark i {
+    transition: all 0.3s;
+    color: rgb(138, 138, 138);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+}
+.box-2 .bookmark:hover i {
+    transform: scale(0.9);
+}
+.box-2 .img {
+    background: url("https://cdn-icons-png.flaticon.com/512/9327/9327582.png");
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 20px;
+}
+.box-2 .name {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 180px;
+    font-weight: bold;
+    top: 20px;
+    letter-spacing: 2px;
+    color: #686868;
+}
+.box-2 p {
+    font-size: 1rem;
+    position: absolute;
+    left: 180px;
+    font-weight: bold;
+    top: 50px;
+    letter-spacing: 2px;
+    color: #686868;
+}
+
+/* Box  ---------------- 3 */
+.box-3 {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+    border: 1px solid #d8d8d8;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.box-3 img {
+    width: 300px;
+}
+.box-3 .Title {
+    font-size: 2rem;
+}
+.box-3 .Time {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    background-color: #1b1b1b;
+    opacity: 0.8;
+    color: white;
+}
+
+/* Box  ---------------- 4 */
+.box-4 {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #220e7ab6;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.51s;
+}
+.box-4:hover {
+    transform: translateY(-10px);
+}
+.box-4 img {
+    width: 70px;
+    float: left;
+    margin: 20px;
+}
+.box-4 .Title {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    margin-top: 100px;
+}
+.box-4 .sale {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #000000ab;
+}
+.box-4 .Time {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background-color: #000000ab;
+}
+.box-4 .Teacher {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    background-color: #000000ab;
+}
+
+/* Alert  ---------------- 1 */
+
+.alert-1 {
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: "Nunito";
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    transform-origin: 100% 100%;
+    transition: all 1s ease-in;
+    z-index: 100000;
+}
+.alert-1 i:nth-child(2) {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    font-size: 2rem;
+}
+.alert-1 i:nth-child(3) {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    font-size: 0.8rem;
+}
+.alert-1-danger {
+    color: white;
+    background-color: var(--danger);
+}
+.alert-1-success {
+    color: white;
+    background-color: var(--success);
+}
+.alert-1-info {
+    color: white;
+    background-color: var(--info);
+}
+.alert-1-dark {
+    color: white;
+    background-color: black;
+}
+.alert-1-war {
+    color: white;
+    background-color: var(--war);
+}
+
+/* Alert  ---------------- 2 */
+.alert-2 {
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: "Nunito";
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5px;
+    left: 41vw;
+    transform-origin: 100% 100%;
+    transition: all 1s ease-in;
+    z-index: 100000;
+}
+.alert-2 i {
+    font-size: 2rem;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.alert-2-danger {
+    background-color: var(--danger);
+    color: white;
+}
+.alert-2-success {
+    background-color: var(--dark-success);
+    color: white;
+}
+.alert-2-war {
+    background-color: var(--dark-war);
+    color: white;
+}
+.alert-2-info {
+    background-color: var(--info);
+    color: white;
+}
+.alert-2-dark {
+    background-color: #202020;
+    color: white;
+}
+.alert-2-light {
+    background-color: #ffdca8;
+    color: white;
+}
+
+/* Alert  ---------------- 3 */
+.alert-3 {
+    padding: 5px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: "Nunito";
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5px;
+    left: 4px;
+    transform-origin: 100% 100%;
+    transition: all 1s ease-in;
+    z-index: 100000;
+}
+.alert-3 i {
+    font-size: 2rem;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.alert-3-danger {
+    background-color: var(--danger);
+    color: white;
+}
+.alert-3-success {
+    background-color: var(--dark-success);
+    color: white;
+}
+.alert-3-war {
+    background-color: var(--dark-war);
+    color: white;
+}
+.alert-3-info {
+    background-color: var(--info);
+    color: white;
+}
+.alert-3-dark {
+    background-color: #202020;
+    color: white;
+}
+.alert-3-light {
+    background-color: #ffdca8;
+    color: white;
+}
+
+/* Alert  ---------------- 4 */
+.alert-4 {
+    padding: 5px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: "Nunito";
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5px;
+    left: 4px;
+    transform-origin: 100% 100%;
+    transition: all 1s ease-in;
+    z-index: 100000;
+}
+.alert-4 i {
+    font-size: 2rem;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.alert-4-danger {
+    background-color: var(--danger);
+    color: white;
+}
+.alert-4-success {
+    background-color: var(--dark-success);
+    color: white;
+}
+.alert-4-war {
+    background-color: var(--dark-war);
+    color: white;
+}
+.alert-4-info {
+    background-color: var(--info);
+    color: white;
+}
+.alert-4-dark {
+    background-color: #202020;
+    color: white;
+}
+.alert-4-light {
+    background-color: #ffdca8;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* Navbar  ---------------- 1 */
+:root{
+    --neon-green: #51d5c2;
+}
+.nav-1{
+    padding: 20px 50px;
+    background-color: #f0f3f7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-family: 'Nunito';
+    display: flex;
+    justify-content: space-around;
+}
+.nav-1 .nav-item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.nav-1 .nav-item p{
+    z-index: 11;
+    font-size: 20px;
+}
+.nav-1 .nav-item i{
+    z-index: 11;
+    font-size: 30px;
+}
+.nav-1 .nav-item.activ i{
+    color: var(--neon-green);
+}
+.nav-1 .nav-item.activ p{
+    color: var(--neon-green);
+}
+.nav-1 .nav-item.activ::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 180%;
+    top: -40%;
+    left: -10%;
+    background-color: #d7e8ff;
+    border-radius: 10px;
+}
