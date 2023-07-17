@@ -1,14 +1,11 @@
 function nav_1_clicked(ev) {
-    let old_activ = document.querySelector(".nav-1 .activ");
+    const div =
+        ev.target.tagName == "P" || ev.target.tagName == "I"
+            ? ev.target.parentNode
+            : ev.target;
+    const old_activ = div.parentNode.querySelector(".activ");
     if (old_activ) {
-        old_activ.setAttribute("class", "nav-item");
+        old_activ.classList.remove("activ");
     }
-    console.log(ev.target.tagName);
-    if (ev.target.tagName == "P" || ev.target.tagName == "I") {
-        var div = ev.target.parentNode;
-    } else {
-        var div = ev.target;
-    }
-    console.log(ev.target.parentElementNode);
     div.classList.add("activ");
 }
