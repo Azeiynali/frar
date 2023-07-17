@@ -916,7 +916,7 @@ body {
 .btn-11-light .liquid {
     background: #ffffff;
 }
-.btn-11-light span{
+.btn-11-light span {
     color: black;
 }
 .btn-11-info .liquid {
@@ -1015,41 +1015,137 @@ body {
     cursor: pointer;
     overflow: hidden;
     color: white;
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
 }
-.btn-13-danger:hover{
+.btn-13-danger:hover {
     background: var(--danger);
 }
-.btn-13-light:hover{
+.btn-13-light:hover {
     background: #fff;
     color: black;
 }
-.btn-13-success:hover{
+.btn-13-success:hover {
     background: var(--success);
 }
-.btn-13-war:hover{
+.btn-13-war:hover {
     background: var(--war);
 }
-.btn-13-info:hover{
+.btn-13-info:hover {
     background: var(--info);
 }
-.btn-13-magic:hover{
+.btn-13-magic:hover {
     background: var(--magic);
     color: var(--purple);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.checkbox-1 {
+    width: 70px;
+    height: 70px;
+    appearance: none;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    box-shadow: 0 -0.06em 0.1em hsl(0, 90%, 100%) inset,
+        0 -0.15em 0.4em hsl(0, 90%, 45%) inset,
+        0 0.05em 0.05em hsl(0, 90%, 45%) inset,
+        0.05em 0 0.1em hsl(0, 90%, 100%) inset,
+        -0.05em 0 0.1em hsl(0, 90%, 100%) inset,
+        0 0.1em 0.4em hsl(0, 90%, 60%) inset;
+    background-image: radial-gradient(
+            8% 8% at 22% 28%,
+            hsl(0, 0%, 100%) 45%,
+            hsla(0, 0%, 100%, 0) 50%
+        ),
+        radial-gradient(
+            8% 8% at 23% 27%,
+            hsl(0, 0%, 100%) 45%,
+            hsla(0, 0%, 100%, 0) 50%
+        ),
+        radial-gradient(
+            8% 8% at 24% 26%,
+            hsl(0, 0%, 100%) 45%,
+            hsla(0, 0%, 100%, 0) 50%
+        ),
+        radial-gradient(
+            8% 8% at 25% 25%,
+            hsl(0, 0%, 100%) 45%,
+            hsla(0, 0%, 100%, 0) 50%
+        ),
+        radial-gradient(
+            8% 8% at 26% 24%,
+            hsl(0, 0%, 100%) 45%,
+            hsla(0, 0%, 100%, 0) 50%
+        ),
+        radial-gradient(
+            8% 8% at 27% 23%,
+            hsl(0, 0%, 100%) 45%,
+            hsla(0, 0%, 100%, 0) 50%
+        ),
+        radial-gradient(
+            8% 8% at 28% 22%,
+            hsl(0, 0%, 100%) 45%,
+            hsla(0, 0%, 100%, 0) 50%
+        );
+}
+.checkbox-1:active {
+    transform: scaleY(0.7);
+}
+.checkbox-1::after {
+    content: "";
+    transition: all 0.2s;
+    transform: translate3d(-50%, -50%, -1px);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-shadow: 0 0 0 0.5em hsl(0, 0%, 100%) inset;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.checkbox-1:checked::after {
+    width: 10px;
+}
+.checkbox-1:checked {
+    box-shadow: 0 -0.06em 0.1em hsl(120, 90%, 100%) inset,
+        0 -0.15em 0.4em hsl(120, 90%, 45%) inset,
+        0 0.05em 0.05em hsl(120, 90%, 45%) inset,
+        0.05em 0 0.1em hsl(120, 90%, 100%) inset,
+        -0.05em 0 0.1em hsl(120, 90%, 100%) inset,
+        0 0.1em 0.4em hsl(120, 90%, 60%) inset;
+}
+.checkbox-2 {
+    width: 70px;
+    height: 70px;
+    appearance: none;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    background-color: var(--light-danger);
+}
+.checkbox-2::after {
+    content: "";
+    transition: all 0.2s;
+    transform: translate3d(-50%, -50%, -1px);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-shadow: 0 0 0 0.5em hsl(0, 0%, 100%) inset;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.checkbox-2:checked::after {
+    width: 10px;
+}
+.checkbox-2:checked {
+    background-color: var(--light-success);
+}
 
 /* Box  ---------------- 1 */
 .box-1 {
