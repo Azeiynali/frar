@@ -1146,6 +1146,99 @@ body {
 .checkbox-2:checked {
     background-color: var(--light-success);
 }
+.checkbox-3 {
+    width: 100px;
+    appearance: none;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #ffffff;
+    position: relative;
+}
+.checkbox-3::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    border-radius: 100%;
+    background-color: #414141;
+    transition: all .5s;
+}
+.checkbox-3:checked::after{
+    left: 65px;
+}
+.checkbox-3-danger:checked::after{
+    background-color: var(--danger);
+}
+.checkbox-3-success:checked::after{
+    background-color: var(--success);
+}
+.checkbox-3-info:checked::after{
+    background-color: var(--info);
+}
+.checkbox-3-dark:checked::after{
+    background-color: black;
+}
+.checkbox-3-magic:checked::after{
+    background: var(--magic);
+}
+
+.checkbox-4 {
+    width: 100px;
+    appearance: none;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    background: #ffffff;
+    position: relative;
+    background: #e0e5ec;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    transition: all .5s;
+}
+.checkbox-4::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all .5s;
+}
+.checkbox-4:checked::after{
+    left: 65px;
+}
+.checkbox-4-pink:checked{
+    background: #fb2175;
+}
+.checkbox-4-danger:checked{
+    background: var(--danger);
+}
+.checkbox-4-success:checked{
+    background: var(--success);
+}
+.checkbox-4-info:checked{
+    background: var(--info);
+}
+.checkbox-4-dark:checked{
+    background: #1a1a1a;
+}
+.checkbox-4-magic:checked{
+    background: var(--magic);
+}
+
+
+
+
+
+
 
 /* Box  ---------------- 1 */
 .box-1 {
