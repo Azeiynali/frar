@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Varela Round";
+    font-family: "Verala Round";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -34,8 +34,8 @@ a,
 small {
     display: inline-block;
 }
-body {
-    font-family: "Varela Round";
+body{
+    font-family: "verala Round";
 }
 :root {
     --danger: #e2462b;
@@ -82,7 +82,6 @@ body {
     padding-right: 35px;
     border-radius: 10px;
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -206,7 +205,6 @@ body {
     padding-right: 65px;
     border-radius: 510px;
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -318,7 +316,6 @@ body {
     padding-right: 35px;
     border-radius: 10px;
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -377,7 +374,6 @@ body {
     padding-right: 35px;
     border-radius: 10px;
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -480,7 +476,6 @@ body {
     padding-right: 36px;
     border-radius: 4px;
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -564,7 +559,6 @@ body {
     padding-right: 10px;
     border-radius: 5px;
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -662,7 +656,6 @@ body {
     padding-right: 35px;
     border-radius: 100px;
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -707,7 +700,6 @@ body {
     padding-right: 35px;
     border-radius: 100px;
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -743,7 +735,6 @@ body {
 /* BTN  ---------------- 9 */
 .btn-9 {
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -787,7 +778,6 @@ body {
 /* BTN  ---------------- 9 */
 .btn-10 {
     text-align: center;
-    font-family: "Varela Round";
     display: inline-block;
     cursor: pointer;
     user-select: none;
@@ -858,7 +848,6 @@ body {
 .btn-11 span {
     position: relative;
     color: #fff;
-    font-family: Arial;
     letter-spacing: 8px;
     z-index: 1;
 }
@@ -1010,7 +999,6 @@ body {
     border: none;
     border-radius: 0.5em;
     background: #181a20;
-    font-family: inherit;
     font-size: 1.5rem;
     cursor: pointer;
     overflow: hidden;
@@ -1155,7 +1143,7 @@ body {
     background-color: #ffffff;
     position: relative;
 }
-.checkbox-3::after{
+.checkbox-3::after {
     content: "";
     width: 30px;
     height: 30px;
@@ -1164,24 +1152,24 @@ body {
     top: 5px;
     border-radius: 100%;
     background-color: #414141;
-    transition: all .5s;
+    transition: all 0.5s;
 }
-.checkbox-3:checked::after{
+.checkbox-3:checked::after {
     left: 65px;
 }
-.checkbox-3-danger:checked::after{
+.checkbox-3-danger:checked::after {
     background-color: var(--danger);
 }
-.checkbox-3-success:checked::after{
+.checkbox-3-success:checked::after {
     background-color: var(--success);
 }
-.checkbox-3-info:checked::after{
+.checkbox-3-info:checked::after {
     background-color: var(--info);
 }
-.checkbox-3-dark:checked::after{
+.checkbox-3-dark:checked::after {
     background-color: black;
 }
-.checkbox-3-magic:checked::after{
+.checkbox-3-magic:checked::after {
     background: var(--magic);
 }
 
@@ -1194,13 +1182,13 @@ body {
     background: #ffffff;
     position: relative;
     background: #e0e5ec;
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
-    transition: all .5s;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+        -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
 }
-.checkbox-4::after{
+.checkbox-4::after {
     content: "";
     width: 30px;
     height: 30px;
@@ -1209,36 +1197,87 @@ body {
     top: 5px;
     border-radius: 100%;
     background-color: #ffffff;
-    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
-    transition: all .5s;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
 }
-.checkbox-4:checked::after{
+.checkbox-4:checked::after {
     left: 65px;
 }
-.checkbox-4-pink:checked{
+.checkbox-4-pink:checked {
     background: #fb2175;
 }
-.checkbox-4-danger:checked{
+.checkbox-4-danger:checked {
     background: var(--danger);
 }
-.checkbox-4-success:checked{
+.checkbox-4-success:checked {
     background: var(--success);
 }
-.checkbox-4-info:checked{
+.checkbox-4-info:checked {
     background: var(--info);
 }
-.checkbox-4-dark:checked{
+.checkbox-4-dark:checked {
     background: #1a1a1a;
 }
-.checkbox-4-magic:checked{
+.checkbox-4-magic:checked {
     background: var(--magic);
 }
 
-
-
-
-
-
+.checkbox-5 {
+    width: 40px;
+    appearance: none;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    background: #ffffff;
+    position: relative;
+    background: #e0e5ec;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+        -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+.checkbox-5:checked::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    width: 8px;
+    height: 14px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: translateY(-50%) rotate(45deg);
+}
+.checkbox-5-pink:checked {
+    background: #fb2175;
+}
+.checkbox-5-danger:checked {
+    background: var(--danger);
+}
+.checkbox-5-success:checked {
+    background: var(--success);
+}
+.checkbox-5-info:checked {
+    background: var(--info);
+}
+.checkbox-5-dark:checked {
+    background: #1a1a1a;
+}
+.checkbox-5-magic:checked {
+    background: var(--magic);
+}
+.checkbox-5-magic:checked::after {
+    border: solid var(--purple);
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 15px;
+    width: 8px;
+    height: 14px;
+    border-width: 0 2px 2px 0;
+    transform: translateY(-50%) rotate(45deg);
+}
 
 /* Box  ---------------- 1 */
 .box-1 {
@@ -1450,7 +1489,6 @@ body {
     padding: 20px;
     padding-left: 70px;
     padding-right: 70px;
-    font-family: "Nunito";
     display: inline-block;
     border-radius: 10px;
     cursor: pointer;
@@ -1499,7 +1537,6 @@ body {
     padding: 10px;
     padding-left: 70px;
     padding-right: 70px;
-    font-family: "Nunito";
     display: inline-block;
     border-radius: 10px;
     cursor: pointer;
@@ -1546,7 +1583,6 @@ body {
     padding: 5px;
     padding-left: 70px;
     padding-right: 70px;
-    font-family: "Nunito";
     display: inline-block;
     cursor: pointer;
     position: fixed;
@@ -1592,7 +1628,6 @@ body {
     padding: 5px;
     padding-left: 70px;
     padding-right: 70px;
-    font-family: "Nunito";
     display: inline-block;
     cursor: pointer;
     position: fixed;
@@ -1638,7 +1673,6 @@ body {
     --neon-green: #51d5c2;
 }
 .nav-1 {
-    font-family: "Nunito";
     display: flex;
     transition: all 0.51s;
     justify-content: center;
@@ -1651,7 +1685,6 @@ body {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    font-family: "Nunito";
     display: flex;
     justify-content: space-around;
     transition: all 0.51s;
